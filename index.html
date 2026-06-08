@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Lab Programs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">LP</div>
+      <div>
+        <h1>Lab Program Library</h1>
+        <p>Store and open all your programs from one place</p>
+      </div>
+    </div>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="Search programs..." />
+      </div>
+
+      <div class="actions">
+        <button id="newBtn" class="primary">+ New Program</button>
+      </div>
+
+      <div id="programList" class="program-list"></div>
+    </aside>
+
+    <section class="content">
+      <div class="editor-card">
+        <div class="editor-header">
+          <h2>Program Details</h2>
+          <div class="editor-actions">
+            <button id="copyBtn" class="secondary">Copy Code</button>
+            <button id="deleteBtn" class="danger">Delete</button>
+          </div>
+        </div>
+
+        <label>
+          <span>Title</span>
+          <input id="title" type="text" placeholder="e.g., Bubble Sort in C" />
+        </label>
+
+        <label>
+          <span>Category</span>
+          <select id="category">
+            <option>C Program</option>
+            <option>C++ Program</option>
+            <option>Java Program</option>
+            <option>Python Program</option>
+            <option>SQL Program</option>
+            <option>Web Program</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Code</span>
+          <textarea id="code" placeholder="Paste your program here..."></textarea>
+        </label>
+
+        <div class="footer-actions">
+          <button id="saveBtn" class="primary">Save Program</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
