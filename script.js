@@ -1,3 +1,12 @@
+const password = "lab123";
+
+const entered = prompt("Enter Password");
+
+if (entered !== password) {
+    document.body.innerHTML =
+        "<h1>Access Denied</h1><p>Wrong Password</p>";
+    throw new Error("Unauthorized");
+}
 const STORAGE_KEY = "labPrograms_v2";
 const THEME_KEY = "labPrograms_theme";
 
